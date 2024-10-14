@@ -1,0 +1,69 @@
+
+body {
+    background-color: #E5EAF0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        /* Three equal-width columns */
+        grid-template-rows: 250px 300px;
+        /* Two rows with specific heights */
+}
+
+.grid-item {
+     grid-column: 1 / 2;
+                    /* Item spans from column 1 to column 3 */
+     grid-row: 1;
+                    /* Item starts in row 1 */
+                }
+.card {
+    background-color: #FAFAF9;
+    border: 1px solid #E5EAF0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 164px;
+    margin-left: 250px;
+}
+
+.card-image {
+    width: 336px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    align-items: center;
+}
+.card-title {
+    color: #20293A;
+    font-size: 1.5rem;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #6C727F;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.card-button {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #E6D6FC;
+    color: #883AE1;
+    text-decoration: none ;
+    font-weight: bold;
+    border-radius: 40px;
+    margin-top: 16px;
+}
+.card-end {
+    color: #6C727F;
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Single column layout for smaller screens */
+    }
+}
